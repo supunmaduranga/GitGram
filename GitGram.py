@@ -21,7 +21,7 @@ if ENV:
     PROJECT_NAME = environ.get('PROJECT_NAME', None)
     ip_addr = environ.get('APP_URL', None)
     # You kanged our project without forking it, we'll get you DMCA'd.
-    GIT_REPO_URL = environ.get('GIT_REPO_URL', "https://github.com/MadeByThePinsHub/GitGram")
+    GIT_REPO_URL = environ.get('GIT_REPO_URL', "https://github.com/supunmaduranga/GitGram")
 else:
     BOT_TOKEN = config.BOT_TOKEN
     PROJECT_NAME = config.PROJECT_NAME
@@ -31,7 +31,7 @@ else:
 updater = Updater(token=BOT_TOKEN, workers=1)
 dispatcher = updater.dispatcher
 
-print("If you need more help, join @GitGramChat in Telegram.")
+print("If you need more help, join @slbotzone in Telegram.")
 
 
 def start(_bot, update):
@@ -55,7 +55,7 @@ def support(_bot, update):
     """Links to Support"""
     message = update.effective_message
     message.reply_text(
-        f"*Getting Support*\n\nTo get support in using the bot, join [the GitGram support](https://t.me/GitGramChat).",
+        f"*Getting Support*\n\nTo get support in using the bot, join [the bot support](https://t.me/slbotzone).",
         parse_mode="markdown"
     )
 
@@ -64,7 +64,7 @@ def source(_bot, update):
     """Link to Source"""
     message = update.effective_message
     message.reply_text(
-        f"*Source*:\n[GitGram Repo](https://waa.ai/GitGram).",
+        f"*Source*:\n[bot repo ](https://waa.ai/GitGram).",
         parse_mode="markdown"
     )
 
